@@ -1,0 +1,233 @@
+/* Add your CSS styles here */
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* skyblue */
+  scroll-behavior: smooth; /* smooth scrolling animation */
+}
+
+/* Header styles */
+header {
+  background-image: url('backround.jpg'); /* Replace 'background.jpg' with the path to your background image */
+  background-size: cover; /* Cover the entire header with the background image */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  color: #fff; /* Set font color to white */
+}
+
+/* Profile picture styles */
+#profile-picture {
+  border-radius: 50%;
+  margin-right: 20px; /* Add space between profile picture and name */
+}
+
+/* Name styles */
+#name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add space between name and job roles */
+}
+
+/* Job roles styles */
+#job-roles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align job roles to the left */
+}
+
+#job-roles li {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: white; /* Change job roles color to white */
+}
+
+/* Navigation styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  border-bottom: 1px solid #ccc; /* Add border bottom */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); /* Transparent background with gradient */
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: color 0.3s;
+  margin: 0 10px; /* Add space between navigation links */
+}
+
+
+nav a:hover {
+  color: #87ceeb; /* skyblue hover color */
+}
+
+
+/* Main content styles */
+main {
+  padding: 20px;
+  background-color: #fff; /* white background */
+}
+
+/* Footer styles */
+footer {
+  background-color: #87ceeb; /* skyblue footer */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Subheading styles */
+.subheading {
+  color: #666; /* grey color for subheadings */
+  text-align: center; /* Center align subheadings */
+}
+
+/* Send email button styles */
+.send-email-btn {
+  background-color: #87ceeb; /* skyblue button color */
+  color: #fff; /* white text color */
+  padding: 10px 20px; /* add padding to button */
+  border: none; /* remove button border */
+  border-radius: 5px; /* add border radius */
+  cursor: pointer; /* change cursor to pointer on hover */
+  text-decoration: none; /* remove default link underline */
+  transition: background-color 0.3s; /* smooth transition on hover */
+}
+
+.send-email-btn:hover {
+  background-color: #6495ed; /* lighter skyblue color on hover */
+}
+
+/* Resume box styles */
+.resume-box {
+  background: #ffffff;
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.resume-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-box li {
+  position: relative;
+  padding: 0 20px 0 60px;
+  margin: 0 0 30px;
+}
+
+.resume-box li:last-child {
+  margin-bottom: 0;
+}
+
+.resume-box li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border-left: 1px dashed #fc5356;
+  bottom: 0;
+}
+
+.resume-box .icon {
+  width: 40px;
+  height: 40px;
+  color: #fc5356;
+  line-height: 40px;
+  background: #ffffff;
+  text-align: center;
+  z-index: 1;
+  border: 1px dashed;
+  border-radius: 50%;
+  margin-right: 10px; /* Add margin between icons */
+}
+
+.resume-box .time {
+  background: #fc5356;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.resume-box h5 {
+  font-weight: 700;
+  color: #20247b;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.resume-box p {
+  margin: 0;
+}
+
+/* Certificate styles */
+.certificate {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  align-items: center;
+}
+
+.certificate-img {
+  width: 80px; /* Adjust the size of the certificate image */
+  height: 80px; /* Adjust the size of the certificate image */
+  border-radius: 50%; /* Make the image circular */
+  margin-bottom: 10px; /* Add space between image and label */
+}
+
+.certificate-label {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center; /* Center align the label */
+}
+
+/* Display certifications in two columns */
+#certifications ul {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line */
+  justify-content: center; /* Center align the items */
+  list-style-type: none; /* Remove bullet points */
+}
+
+#certifications li {
+  flex: 0 0 calc(50% - 20px); /* Set each item to occupy 50% of the container width with some spacing */
+  margin: 10px; /* Add spacing between items */
+}
+
+/* Center headers for specific sections */
+.center-heading h2 {
+  text-align: center;
+}
+
+/* Center paragraphs within the Certifications and Get In Touch sections */
+#certifications p,
+#get-in-touch p {
+  text-align: center;
+}
+
+/* Align icons for Get in Touch section at the end on one line horizontally and increase their size */
+#get-in-touch .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px; /* Add some space between text and icons */
+  font-size: 28px; /* Increase icon size */
+}
